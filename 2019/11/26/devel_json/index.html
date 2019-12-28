@@ -42,7 +42,26 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d0000"></div>
+<div class="overlay" style="background: #a0cfe4"></div>
+<!-- 添加“心知天气”-->
+
+<div id="tp-weather-widget"></div>
+<script>
+  (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+  window.SeniverseWeatherWidget('show', {
+    flavor: "slim",
+    location: "WTW3SJ5ZBJUY",
+    geolocation: true,
+    language: "zh-Hans",
+    unit: "c",
+    theme: "auto",
+    token: "5802e101-9e39-4e81-a8ec-009b79ccac28",
+    hover: "enabled",
+    container: "tp-weather-widget"
+  })
+</script>
+
+
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -115,7 +134,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d0000"></div>
+  	<div class="overlay js-overlay" style="background: #a0cfe4"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -390,6 +409,7 @@
 
 
 
+<!-- 《valine评论 -->
     
        <section id="comments" class="comments">
          <style>
@@ -590,7 +610,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">&amp;nbsp;&amp;nbsp;很惭愧&lt;br&gt; &amp;nbsp;&amp;nbsp;胆小认生，不易相处&lt;br/&gt; &amp;nbsp;&amp;nbsp;“一入编程深如海，从此品味似粪土。”&lt;br/&gt;&lt;br/&gt; &amp;nbsp;&amp;nbsp;工作3年，换了3家公司。没办法，感觉公司上层太low了，体现不出我的工作水平，拉低了我思维层次。&lt;br/&gt;&lt;br/&gt; &amp;nbsp;&amp;nbsp;谢谢大家听我吐槽哦*^_^*</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">&amp;nbsp;&amp;nbsp;很惭愧&lt;br&gt; &amp;nbsp;&amp;nbsp;胆小认生，不易相处&lt;br/&gt; &amp;nbsp;&amp;nbsp;“一入编程深如海，从此品味似粪土。”&lt;br/&gt;&lt;br/&gt; &amp;nbsp;&amp;nbsp;没办法，感觉公司上层太low了，体现不出我的工作水平，拉低了我思维层次。&lt;br/&gt;&lt;br/&gt; &amp;nbsp;&amp;nbsp;谢谢大家听我吐槽哦*^_^*</div>
   	  	
     	</section>
     
